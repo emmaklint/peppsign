@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css"/>
+
+
+  </head>
+  <body>
+    <div class="row d-flex justify-content-around align-items-center">
+      <div class="col-sm-6 form-div">
+    <form>
+      <div class="form-group">
+        <label for="firstName">Förnamn</label>
+        <input type="string" class="form-control" id="firstName" placeholder="Ditt förnamn">
+        <label for="lastName">Efternamn</label>
+        <input type="string" class="form-control" id="lastName" placeholder="Ditt efternamn">
+        <label for="lastName">Telefonnummer</label>
+        <input type="string" class="form-control" id="telephoneNumber" placeholder="Ditt telefonnummer">
+        <span id="alert" style="display:none;"><p>Skriv på formatet 0712345678</p></span>
+        <label for="yourRole">Roll</label>
+        <input type="string" class="form-control" id="yourRole" placeholder="Din roll i Pepp">
+        <div class="form-group">
+          <label for="yourGroup">Välj din stad/grupp</label>
+          <select class="form-control" id="yourGroup">
+          <option>Stockholm</option>
+          <option>Göteborg</option>
+          <option>Luleå</option>
+          <option>Styrelsen</option>
+        </select>
+      </div>
+  </div>
+  <input type="button" class="btn btn-primary" onclick="createSignature()" value="Skapa mailsignatur"></input>
+</form>
+</div>
+<div class="col-sm-6 signature">
+  <div class="title"><h1 class="titleHead">MAILSIGNATUR</h1></div>
+  <div class="titleLine"></div>
+  <div id="copy">
+  <p class="name"><span id="first_name"></span> <span id="last_name"></span><br><span id="your_role"></span><span id="your_group"></span></p>
+  <p class="contact"><span id="telephone_number"></span><br><span id="tagline"></span></p>
+  <img style="display:none" id="logo" src="logo.png"/>
+</div>
+
+  <div>
+    <button id="copy-text" class="btn btn-primary" onclick="copyToClipboard('#copy')">Copy</button>
+    <span id="copied-text" style="display: none;">Copied!</span>
+  </div>
+
+
+</div>
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

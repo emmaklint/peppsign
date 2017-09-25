@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+
+* {-webkit-font-smoothing: antialiased;}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  background-color: #464696;
+  -webkit-font-smoothing: antialiased;
+}
+
+form {
+  padding: 10vh;
+}
+
+.btn-primary {
+  border-color: #464696;
+  background-color: #464696;
+}
+
+.btn-primary:hover {
+  border-color: #7575B1;
+  background-color: #7575B1;
+}
+
+.signature {
+  font-family: sans-serif;
+  min-height: 65vh;
+    background-color: white;
+}
+
+#your_role {
+  font-weight: 400;
+  font-size: 12px;
+  /*font-style: italic;*/
+}
+
+#your_group {
+ font-weight: 400;
+ font-size: 12px;
+}
+
+.contact {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+#tagline {
+    font-weight: 700;
+}
+
+#first_name {
+  font-size: 14px;
+}
+
+#last_name {
+  font-size: 14px;
+}
+
+#alert {
+  color: #FECC02;
+}
+
+.form-div {
+  background-color: #01B3FE;
+  min-height: 65vh;
+}
+
+label {
+  color: white;
+}
+
+.signature h1 {
+  padding-top: 30px;
+  font-family: 'Raleway', sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  font-weight: 700 !important;
+}
+
+.titleLine {
+  height:10px;
+  background-color: black;
+  width: 30vw;
+  margin-bottom: 50px;
+}
