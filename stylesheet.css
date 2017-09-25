@@ -17,6 +17,7 @@ form {
 .btn-primary {
   border-color: #464696;
   background-color: #464696;
+  font-weight: 700;
 }
 
 .btn-primary:hover {
@@ -40,7 +41,10 @@ form {
  font-weight: 400;
  font-size: 12px;
 }
-
+.name {
+  font-weight: 400;
+  font-size: 12px;
+}
 .contact {
   font-weight: 400;
   font-size: 12px;
@@ -52,10 +56,12 @@ form {
 
 #first_name {
   font-size: 14px;
+  font-weight: 700;
 }
 
 #last_name {
   font-size: 14px;
+  font-weight: 700;
 }
 
 #alert {
@@ -83,5 +89,10 @@ label {
   height:10px;
   background-color: black;
   width: 30vw;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+}
+
+#copy {
+  border: 5px solid;
+  padding: 20px;
 }
